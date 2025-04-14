@@ -4,11 +4,15 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        FlipCoin flipCoin = new FlipCoin();
+        flipCoin.flipCoin(0, 10, 10);
+        flipCoin.flipCoin(25, 100, 10);
+        flipCoin.flipCoin(50, 250, 10);
+        flipCoin.flipCoin(75, 500, 10);
+        flipCoin.flipCoin(100, 1000, 10);
+
+
     }
 }
